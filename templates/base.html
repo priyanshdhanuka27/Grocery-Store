@@ -15,16 +15,16 @@
   <nav id="navbar">
     <div class="container-fluid">
         <div class="logo">
-            <a href="index.html">
+            <a href="/">
                 <img class="logo" src="{% static 'images/shop.png' %}" alt="Logo Here" style="width: 55px; height: 55px;">
             </a>
         </div>
         <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/signup">Sign-up</a></li>
-                <li><a href="/profile">
+                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'signup' %}">Sign-up</a></li>
+                <li><a href="{% url 'user_profile' %}">
                     <i class="far fa-user fa-2x"></i></a>
                 </li>
         </ul>
